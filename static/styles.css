@@ -211,13 +211,14 @@ footer {
 
 .links-footer-top,
 .links-footer-bottom {
-    margin-top: 30px;
+    margin: 0 auto;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 
 .info-footer {
-    display: flex;
+    margin: 0 auto;
 }
 
 @media (min-width: 48em) {

@@ -231,18 +231,26 @@ main>p>a {
 * Speakers section
 */
 
-#speakers-container span {
+#speakers-container span,
+#tickets-container span {
     font-family: BebasNeue;
     font-size: 48px;
     letter-spacing: 0.84px;
     text-align: center;
     color: #000000;
+}
+
+#speakers-container span {
     display: none;
 }
 
 #speakers {
     display: flex;
     flex-direction: column;
+}
+
+#speakers div {
+    margin: 0 auto;
 }
 
 #speakers p {
@@ -259,6 +267,35 @@ main>p>a {
     color: black;
     letter-spacing: 0.75px;
     text-align: center;
+}
+
+
+/*
+* Tickets section
+*/
+
+#tickets-container {
+    letter-spacing: 1.12px;
+}
+
+.tickets-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.tickets-buttons a {
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    font-family: BebasNeue;
+    padding: 2px 40px;
+    font-size: 24px;
+}
+
+.tickets-buttons a:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: #000;
 }
 
 
@@ -352,6 +389,7 @@ footer {
     }
     #speakers-container {
         margin-top: 100px;
+        margin-bottom: 120px;
     }
     #speakers-container span {
         display: inline;
@@ -361,15 +399,17 @@ footer {
         padding: 10px;
         flex-flow: row wrap;
         flex-wrap: wrap;
-        row-gap: 20px;
         justify-content: space-between;
     }
-    #speakers div {
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: calc(24% - 5px);
-        border: 1px solid black;
-        /* separate properties for IE11 upport */
+    #speakers img {
+        width: 100%;
+    }
+    .tickets-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .tickets-buttons a {
+        width: 30%;
     }
     footer {
         flex-direction: row;

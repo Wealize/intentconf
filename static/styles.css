@@ -128,7 +128,8 @@ main {
     text-align: center;
 }
 
-.link-btn {
+.link-btn,
+.suscribe-btn {
     border: 1px solid #fff;
     padding: 5px 60px;
     letter-spacing: 1.12px;
@@ -167,7 +168,7 @@ main>p>a {
 
 
 /*
-* Second section
+* Description section
 */
 
 .black-logo {
@@ -189,11 +190,75 @@ main>p>a {
 .intentconf-description {
     font-size: 32px;
     letter-spacing: 0.75px;
+    color: #000000;
 }
 
 .intentconf-date {
     font-size: 48px;
     letter-spacing: 0.84px;
+    color: #000000;
+}
+
+.newsletter-container {
+    background-color: #000000;
+    height: 300px;
+    font-size: 24px;
+    font-family: BebasNeue;
+    margin-bottom: 20px;
+    padding: 20px;
+    letter-spacing: 1.31;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.newsletter-container input {
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.suscribe-btn:hover {
+    text-decoration: none;
+}
+
+.suscribe-btn {
+    width: 250px;
+    margin: 0 auto;
+}
+
+
+/*
+* Speakers section
+*/
+
+#speakers-container span {
+    font-family: BebasNeue;
+    font-size: 48px;
+    letter-spacing: 0.84px;
+    text-align: center;
+    color: #000000;
+    display: none;
+}
+
+#speakers {
+    display: flex;
+    flex-direction: column;
+}
+
+#speakers p {
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+
+#speakers .name {
+    font-family: BebasNeue;
+    font-size: 32px;
+    color: black;
+    letter-spacing: 0.75px;
+    text-align: center;
 }
 
 
@@ -207,14 +272,28 @@ footer {
     letter-spacing: 0.75px;
     line-height: 27px;
     background-color: #000000;
+    flex-direction: column;
+    display: flex;
+}
+
+.footer-image {
+    margin-top: 30px;
+}
+
+.links-footer-top {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.links-footer-bottom {
+    margin-bottom: 50px;
 }
 
 .links-footer-top,
 .links-footer-bottom {
-    margin: 0 auto;
-    padding-top: 30px;
     display: flex;
     justify-content: space-between;
+    font-family: BebasNeue;
 }
 
 .info-footer {
@@ -245,5 +324,67 @@ footer {
         font-size: 36px;
         letter-spacing: 0.84px;
         margin-bottom: 60px;
+    }
+    .newsletter-container {
+        font-size: 28px;
+        letter-spacing: 1.12;
+        flex-direction: row;
+        padding: 30px;
+        height: 110px;
+        width: auto;
+        vertical-align: center;
+    }
+    .newsletter-container input,
+    .newsletter-container a {
+        height: 50px;
+    }
+    .newsletter-container span {
+        flex-grow: 4;
+    }
+    .newsletter-container input {
+        width: 300px;
+        margin-right: 20px;
+        height: 39px;
+        flex-grow: 1
+    }
+    .newsletter-container a {
+        height: 40px;
+    }
+    #speakers-container {
+        margin-top: 100px;
+    }
+    #speakers-container span {
+        display: inline;
+    }
+    #speakers {
+        flex-direction: row;
+        padding: 10px;
+        flex-flow: row wrap;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: space-between;
+    }
+    #speakers div {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(24% - 5px);
+        border: 1px solid black;
+        /* separate properties for IE11 upport */
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-image {
+        text-align: left;
+        margin-top: 45px;
+    }
+    .info-footer {
+        margin-top: 30px;
+    }
+    .links-footer-top,
+    .links-footer-bottom {
+        display: flex;
+        justify-content: space-between;
     }
 }

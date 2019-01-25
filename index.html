@@ -17,17 +17,32 @@
 
     <!-- Custom styles for this template -->
     <link href="/static/styles.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133185320-1"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      var _gaq = _gaq || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-133185320-1');
+
+      $(window).scroll(function() {
+        ga('send','event', 'engaged users');
+      });
+    </script>
   </head>
 
    <body class="text-center ">
     <div id="main-container" class="d-flex mx-auto flex-column">
       <header class="masthead">
         <div class="inner">
-          <img class="masthead-brand" src="/static/images/logo-whitewhite-logo-header.png" width="160px"/>
+          <img class="masthead-brand" src="/static/images/logo-whitewhite-logo-header.png"
+          onclick="_gaq.push(['_trackEvent', 'Google Link', 'Action label', 'Additional info']);" width="160px"/>
           <nav class="nav nav-masthead nav-desktop justify-content-center text-uppercase">
-           <!-- <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Contact</a>-->
+           <!-- <a class="nav-link active" href="#">Home</a> -->
+           <!-- <a class="nav-link" href="#">About</a> -->
+           <!-- <a class="nav-link" href="#">Contact</a> -->
             <a class="nav-link" href="https://www.eventbrite.com/e/intentconf-2019-tickets-54587219844" target="_blank">Register</a>
           </nav>
         </div>
@@ -37,8 +52,8 @@
         <p >0.1</p>
         <h1 class="cover-heading">a conference about conversation</h1>
         <p class="lead">
-          <a href="https://www.eventbrite.com/e/intentconf-2019-tickets-54587219844" target="_blank" class="link-btn">Register</a>
-          <!-- <a href="#" class="link-btn">Sponsors</a> -->
+          <a href="https://www.eventbrite.com/e/intentconf-2019-tickets-54587219844" onclick="_gaq.push(['_trackEvent', 'Google Link', 'Action label', 'Additional info']);" target="_blank" class="link-btn">Register</a>
+         <!-- <a href="#" class="link-btn">Sponsors</a> -->
         </p>
       </main>
       </div>
@@ -48,33 +63,67 @@
             <img class="black-logo" width="150" src="/static/images/logo-black.png"/>
       </div>
       <div class="col-8 mx-auto default-spacing intentconf-description-container mt-50">
-        <span class="text-capitalize text-dark intentconf-description">
+        <span class="text-capitalize intentconf-description">
             intentconf is a conference where conversational designers and developers and the businesses implementing  them meet and talk. its a one-day, single track conference followed by a family day.
         </span>
       </div>
       <div class="mx-auto default-spacing mt-50 intentconf-date-container">
-        <span class="text-capitalize text-dark intentconf-date">
+        <span class="text-capitalize intentconf-date">
             April 27th 2019 Cordoba
         </span>
       </div>
-    </div> <!--
-    <footer class="mastfoot mt-auto flex">
-        <img src="/static/images/logo-whitewhite-logo-header.png" width="150px"/>
-        <div class="social center">
-            <div class="links-footer-top col-3 text-uppercase center">
+    <!--  <div class="mx-auto default-spacing mt-50 newsletter-container col-sm-11">
+        <span class="text-uppercase text-white">
+            Suscribe to our newsletter
+        </span>
+        <input type="text" name="email" placeholder="your@mail.com"/>
+        <a href="#" class="suscribe-btn">subscribe</a>
+      </div>
+    </div>
+    <div  id="speakers-container">
+      <span class="test-uppercase text-black">Speakers</span>
+      <div id="speakers">
+        <div class="col-md-3 col-sm-10">
+           <img src="/static/images/photo.jpg"/>
+           <p class="name">Fernando Alonso<p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+        </div>
+        <div class="col-md-3 col-sm-10">
+           <img src="/static/images/photo.jpg"/>
+           <p class="name">Fernando Alonso<p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+        </div>
+        <div class="col-md-3 col-sm-10">
+           <img src="/static/images/photo.jpg"/>
+           <p class="name">Fernando Alonso<p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+        </div>
+        <div class="col-md-3 col-sm-10">
+           <img src="/static/images/photo.jpg"/>
+           <p class="name">Fernando Alonso<p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+        </div>
+      </div>
+    </div>
+    <footer class="mastfoot">
+        <div class="footer-image col-sm-12 col-md-4">
+            <img src="/static/images/logo-whitewhite-logo-header.png" width="150px"/>
+        </div>
+        <div class="social center col-sm-12 col-md-4">
+            <div class="links-footer-top col-sm-12 col-md-12 text-uppercase center">
               <a href="#">Home</a>
               <a href="#">About</a>
               <a href="#">Contact</a>
             </div>
-            <div class="links-footer-bottom col-4 text-uppercase center">
-              <a href="#">Twitter</a>
+            <div class="links-footer-bottom col-sm-12 col-md-12 text-uppercase center">
+              <a href="https://twitter.com/intentconf" target="_blank">Twitter</a>
               <a href="#">Facebook</a>
               <a href="#">Instagram</a>
             </div>
-            <div class="info-footer center col-2">
+        </div>
+            <div class="info-footer center col-sm-4 col-md-2">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-        </div>
     </footer> -->
 
 

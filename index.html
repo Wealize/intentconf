@@ -40,8 +40,8 @@
           <img class="masthead-brand" src="/static/images/logo-whitewhite-logo-header.png"
           width="160px"/>
           <nav class="nav nav-masthead nav-desktop justify-content-center text-uppercase">
-            <!--<a class="nav-link active" href="#">Home</a>-->
-             <!--<a class="nav-link" href="#">About</a>-->
+            <a class="nav-link active" href="#main-container">Home</a>
+            <a class="nav-link" href="#description">About</a>
             <a class="nav-link" onclick="gtag('event', 'click', {
             'event_category': 'Contact_header'})" href="mailto:hi@intentconf.com">Contact</a>
             <a class="nav-link" onclick="gtag('event', 'click', {
@@ -74,7 +74,7 @@
             April 27th 2019 Cordoba
         </span>
       </div>
-   <!--    <div class="mx-auto default-spacing mt-50 newsletter-container col-sm-11">
+  <!--    <div class="mx-auto default-spacing mt-50 newsletter-container col-sm-11">
         <span class="text-uppercase text-white">
             Suscribe to our newsletter
         </span>
@@ -87,8 +87,8 @@
       <div id="speakers">
         <div class="col-md-3 p-3 col-sm-10 center">
            <img src="/static/images/photo.jpg"/>
-           <p class="name">Fernando Alonso<p>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+           <p class="name">Nara Kasbergen<p>
+           <p>Senior full-stack developer at NPR and technical lead for development on Amazon Alexa and Google Home.</p>
         </div>
         <div class="col-md-3 p-3 col-sm-10 center">
            <img src="/static/images/photo.jpg"/>
@@ -106,12 +106,73 @@
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
         </div>
       </div>
-    </div>
+    </div>-->
     <div  id="tickets-container">
       <span class="test-uppercase text-black">Early bird tickets available now</span>
-      <div class="tickets-buttons">
+      <div class="tickets-buttons col-sm-8 col-md-4 center">
         <a href="#">Register</a>
-        <a href="#">Sponsors</a>
+        <!--<a href="#">Sponsors</a>-->
+      </div>
+    </div>
+    <div  id="phrases-container">
+      <div id="phrases">
+        <div class="wraper col-md-3 col-sm-10">
+        <div class="phrase center">
+           <img src="/static/images/connect-icon@2x.png"/>
+           <p class="name">Connect<p>
+           <p class="phrase-text">Meet the professionals behind your favorite chatbots and skills</p>
+        </div>
+        </div>
+        <div class="wraper col-md-3 col-sm-10">
+        <div class="phrase center">
+           <img src="/static/images/discover-icon@2x.png"/>
+           <p class="name">Discover<p>
+           <p class="phrase-text">Stay on top of the latest trends and the most interesting use cases</p>
+        </div>
+        </div>
+        <div class="wraper col-md-3 col-sm-10">
+        <div class="phrase center">
+           <img src="/static/images/learn-icon@2x.png"/>
+           <p class="name">Learn<p>
+           <p class="phrase-text">Catch up with the best practices and standards of conversation creation</p>
+        </div>
+        </div>
+        <div class="wraper col-md-3 col-sm-10">
+        <div class="phrase center">
+           <img src="/static/images/start-icon@2x.png"/>
+           <p class="name">Start<p>
+           <p class="phrase-text">Meet your next partner and client and create something epic!</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div  id="schedule-container">
+      <span>Provisional Schedule</span>
+      <div id="schedule" class="col-10 offset-1">
+        <div class="schedule center" class="col-md-4">
+           <img src="/static/images/intentconf-welcome-to-cordoba.jpg"/>
+           <p class="name">Friday<p>
+           <p class="subtitle">Welcome to Cordoba<p>
+           <p class="schedule-text">Travel to Córdoba and prepare for an intense conference day. If you are a speaker or a sponsor, we have a date!</p>
+        </div>
+        <div class="schedule center" class="col-md-4">
+           <img src="/static/images/intentconf-meeting.jpg"/>
+           <p class="name">Saturday<p>
+           <p class="subtitle">Conference day<p>
+           <p class="schedule-text">Conference start at 10 am, but doors open at 9 for breakfast and casual networking. Learning and meals included in your Intentconf ticket.</p>
+        </div>
+        <div class="schedule center" class="col-md-4">
+           <img src="/static/images/intentconf-party.jpg"/>
+           <p class="name">Saturday night<p>
+           <p class="subtitle">Conference party<p>
+           <p class="schedule-text">Every conference has a party and Intentconf has an intentional one.</p>
+        </div>
+        <div class="schedule center" class="col-md-4">
+           <img src="/static/images/intentconf-family.jpg"/>
+           <p class="name">Sunday<p>
+           <p class="subtitle">Family day<p>
+           <p class="schedule-text">Head back home or stay in Córdoba and join us for a kinds-friendly family day.</p>
+        </div>
       </div>
     </div>
     <footer class="mastfoot">
@@ -120,20 +181,21 @@
         </div>
         <div class="social center col-sm-12 col-md-4">
             <div class="links-footer-top col-sm-12 col-md-12 text-uppercase center">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Contact</a>
+              <a href="#main-container">Home</a>
+              <a href="#description">About</a>
+              <a onclick="gtag('event', 'click', {
+                'event_category': 'Contact_footer'})" href="mailto:hi@intentconf.com">Contact</a>
+              <a href="https://twitter.com/intentconf" target="_blank">Twitter</a>
             </div>
             <div class="links-footer-bottom col-sm-12 col-md-12 text-uppercase center">
-              <a href="https://twitter.com/intentconf" target="_blank">Twitter</a>
-              <a href="#">Facebook</a>
-              <a href="#">Instagram</a>
+              <!--<a href="#">Facebook</a>
+              <a href="#">Instagram</a>-->
             </div>
         </div>
             <div class="info-footer center col-sm-4 col-md-2">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="white">Made with ♡ from Córdoba by <a class="text-underline" href="https://theneonproject.org/">The Neon Project</a></p>
             </div>
-    </footer>-->
+    </footer>
 
 
     <!-- Bootstrap core JavaScript

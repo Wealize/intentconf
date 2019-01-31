@@ -17,7 +17,7 @@ $(document).ready(function() {
         let isClickInside = menu.contains(event.target);
         let isMenuIcon = icon.contains(event.target)
         if (!isClickInside && !isMenuIcon) {
-            $dropdown.fadeToggle('slow');
+            $dropdown.hide();
             icon.style.display = 'inline-block';
         }
     });

@@ -5,7 +5,7 @@ $(document).ready(function() {
         });
     });
     let $dropdown = $('.dropdown-menu');
-    $dropdown.hide();
+    $dropdown.css('display', 'flex').hide();
     let $icon = $('.icon');
     $icon.on('click', function() {
         $dropdown.toggle('drop', 500);
@@ -17,7 +17,7 @@ $(document).ready(function() {
         let isClickInside = menu.contains(event.target);
         let isMenuIcon = icon.contains(event.target)
         if (!isClickInside && !isMenuIcon) {
-            $dropdown.hide();
+            $dropdown.fadeOut();
             icon.style.display = 'inline-block';
         }
     });

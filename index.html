@@ -17,23 +17,38 @@
 
     <!-- Custom styles for this template -->
     <link href="/static/styles.css" rel="stylesheet">
+    <!-- Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133185320-1"></script>
-     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+			  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./static/scripts/animations.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-133185320-1');
-
-      $(window).scroll(function() {
-        gtag('event', 'scroll', {
-        'event_category': 'Scroll'});
-      });
     </script>
   </head>
-
    <body class="text-center ">
+    <div class="menu-icon">
+        <i id="icon" class="material-icons icon">
+        menu
+        </i>
+    </div>
+    <div id ="menu" class="dropdown-menu">
+      <nav class="nav nav-mobile text-uppercase center">
+            <a class="nav-link nav-mobile-link active" href="#main-container">Home</a>
+            <a class="nav-link nav-mobile-link" href="#description">About</a>
+            <a class="nav-link nav-mobile-link" onclick="gtag('event', 'click', {
+            'event_category': 'Contact_header'})" href="mailto:hi@intentconf.com">Contact</a>
+            <a class="nav-link nav-mobile-link" onclick="gtag('event', 'click', {
+            'event_category': 'Register_header'})" href="https://www.eventbrite.com/e/intentconf-2019-tickets-54587219844" target="_blank">Register</a>
+      </nav>
+    </div>
     <div id="main-container" class="d-flex mx-auto flex-column">
       <header class="masthead">
         <div class="inner">
@@ -74,26 +89,26 @@
             April 27th 2019 Cordoba
         </span>
       </div>
-  <!--    <div class="mx-auto default-spacing mt-50 newsletter-container col-sm-11">
+      <!--<div class="mx-auto default-spacing mt-50 newsletter-container col-sm-11">
         <span class="text-uppercase text-white">
             Suscribe to our newsletter
         </span>
         <input type="text" name="email" placeholder="your@mail.com"/>
         <a href="#" class="suscribe-btn">subscribe</a>
-      </div>
+      </div>-->
     </div>
-    <div  id="speakers-container">
-      <span class="test-uppercase text-black">Speakers</span>
-      <div id="speakers">
+    <!-- <div  id="speakers-container">
+      <span class="test-uppercase text-black">Speakers (more coming soon!)</span>
+     <div id="speakers">
         <div class="col-md-3 p-3 col-sm-10 center">
-           <img src="/static/images/photo.jpg"/>
+           <img src="/static/images/nara.jpg"/>
            <p class="name">Nara Kasbergen<p>
            <p>Senior full-stack developer at NPR and technical lead for development on Amazon Alexa and Google Home.</p>
         </div>
         <div class="col-md-3 p-3 col-sm-10 center">
            <img src="/static/images/photo.jpg"/>
            <p class="name">Fernando Alonso<p>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
         </div>
         <div class="col-md-3 p-3 col-sm-10 center">
            <img src="/static/images/photo.jpg"/>
@@ -202,6 +217,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  -->
   </body>
 </html>

@@ -64,36 +64,45 @@ body {
 }
 
 .menu-icon i {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .dropdown-menu {
     position: fixed;
-    justify-content: space-around;
     top: 0;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     height: 100vh;
     font-size: 20px;
-    width: 50%;
+    width: 40%;
     display: none;
+}
+
+.dropdown-menu nav {
+    margin-top: 30px;
+}
+
+.dropdown-menu i {
+    right: 0;
+    display: block;
+    color: white;
+    font-size: 50px;
+    text-align: right;
+    width: 100%;
+}
+
+.dropdown-menu i:hover {
+    color: white;
 }
 
 .nav-mobile {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    row-gap: 30px;
 }
 
 .nav-mobile-link {
-    border: 1px solid white;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-}
-
-.nav-mobile-link:hover {
-    background: #000;
 }
 
 

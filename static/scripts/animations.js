@@ -5,11 +5,15 @@ $(document).ready(function() {
         });
     });
     let $dropdown = $('.dropdown-menu');
-    $dropdown.css('display', 'flex').hide();
     let $icon = $('.icon');
+    let $iconClose = $('.close')
     $icon.on('click', function() {
         $dropdown.toggle('drop', 500);
         $icon.hide();
+    });
+    $iconClose.on('click', function() {
+        $dropdown.hide();
+        $icon.css('display', 'inline-block');
     });
     document.addEventListener('click', function(event) {
         let menu = document.getElementById("menu");
